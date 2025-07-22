@@ -23,7 +23,7 @@ export const getImageUrl = (
 
 export const fetchMovie = async (
   query: string,
-  page = "1"
+  page: number = 1
 ): Promise<MoviesResponse> => {
   const { data } = await api.get<MoviesResponse>("/search/movie", {
     params: { query, page },

@@ -8,3 +8,8 @@ export interface Movie {
   vote_count: number;
   backdrop_path?: string;
 }
+
+export interface MovieResponse {
+  results: Movie[];
+  total_pages: number;
+}
