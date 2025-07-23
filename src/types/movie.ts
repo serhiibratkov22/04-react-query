@@ -6,7 +6,5 @@ export interface Movie {
   poster_path: string | null;
   vote_average: number;
   vote_count: number;
-  backdrop_path?: string;
+  backdrop_path: string;
 }
-
-
